@@ -1,0 +1,41 @@
+WBS ID,TaskName,Start Date,End Date,Duration,Predecessor,Milestone
+2,FSW Build 2.0,1/1/2026,2/22/2026,53,,No
+2.1,Review Component ICDs,1/1/2026,1/5/2026,5,,No
+2.2,Failure Analysis,1/6/2026,1/10/2026,5,2.1,No
+2.3,Functional Analysis,1/11/2026,1/15/2026,5,2.2,No
+2.4,Develop Test Scenarios,1/16/2026,1/22/2026,7,2.3,No
+2.5,Documentation (Summary),1/23/2026,2/1/2026,10,2.4,No
+2.5.1,FMEA,1/23/2026,1/25/2026,3,2.1;2.2,No
+2.5.2,Requirements,1/26/2026,1/27/2026,2,2.1,No
+2.5.3,FDC Architecture,1/28/2026,1/30/2026,3,2.5.1,No
+2.5.4,Test Plan,1/31/2026,2/1/2026,2,2.3;2.4,No
+2.6,Implement FMSA TMONs and RTSs,2/2/2026,2/6/2026,5,2.5.3,No
+2.7,Test TMONs and RTSs (Summary),2/7/2026,2/22/2026,16,2.6,No
+2.7.1,Unit Test,2/7/2026,2/9/2026,3,2.5.4,No
+2.7.2,Dry Run Tests,2/10/2026,2/13/2026,4,2.7.1,No
+2.7.3,Qual Tests,2/14/2026,2/18/2026,5,2.7.2,No
+2.7.4,Review Test Logs,2/19/2026,2/20/2026,2,2.7.3,No
+2.7.5,Update Test Scripts,2/21/2026,2/22/2026,2,2.7.3,No
+2.8,FSW Build 2.0 Release,2/23/2026,2/23/2026,1,2.7,Yes
+3,FSW Build 3.0,2/24/2026,4/28/2026,66,,No
+3.1,Review Payload ICDs,2/24/2026,2/27/2026,4,,No
+3.2,Failure Analysis,2/28/2026,3/4/2026,5,3.1,No
+3.3,Functional Analysis,3/5/2026,3/9/2026,5,3.2,No
+3.4,Payload States and Modes,3/10/2026,3/13/2026,4,3.1,No
+3.5,Develop Test Scenarios,3/14/2026,3/20/2026,7,3.1;3.2;3.3,No
+3.6,Develop Payload Verification Scripts,3/21/2026,3/25/2026,5,3.4;3.5,No
+3.7,Documentation (Summary),3/26/2026,3/30/2026,5,3.4;3.5;3.6,No
+3.7.1,FMEA,3/26/2026,3/28/2026,3,3.2;3.3,No
+3.7.2,Test Plan,3/29/2026,3/30/2026,2,3.5,No
+3.8,Implement FMSA TMONs and RTSs,3/31/2026,4/4/2026,5,3.4,No
+3.9,Test TMONs and RTSs (Summary),4/5/2026,4/20/2026,16,3.7.2,No
+3.9.1,Unit Test,4/5/2026,4/7/2026,3,3.7.2,No
+3.9.2,Dry Run Tests,4/8/2026,4/11/2026,4,3.9.1,No
+3.9.3,Qual Tests,4/12/2026,4/16/2026,5,3.9.2,No
+3.9.4,Review Test Logs,4/17/2026,4/18/2026,2,3.9.3,No
+3.9.5,Update Test Scripts,4/19/2026,4/20/2026,2,3.9.3,No
+3.10,Documentation (Summary),4/21/2026,4/28/2026,8,,No
+3.10.1,MSAP,4/21/2026,4/23/2026,3,3.4;3.5,No
+3.10.2,MSATP,4/24/2026,4/26/2026,3,3.5;3.6,No
+3.10.3,TMON and RTS Dictionary,4/27/2026,4/28/2026,2,3.8,No
+3.11,FSW Build 3.0 Release,4/29/2026,4/29/2026,1,3.9,Yes
